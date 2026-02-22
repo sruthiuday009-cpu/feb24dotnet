@@ -1,0 +1,11 @@
+C:\feb19.net\Calculator.Core\bin\Debug\net10.0\Calculator.Core.deps.json
+C:\feb19.net\Calculator.Core\bin\Debug\net10.0\Calculator.Core.dll
+C:\feb19.net\Calculator.Core\bin\Debug\net10.0\Calculator.Core.pdb
+C:\feb19.net\Calculator.Core\obj\Debug\net10.0\Calculator.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\feb19.net\Calculator.Core\obj\Debug\net10.0\Calculator.Core.AssemblyInfoInputs.cache
+C:\feb19.net\Calculator.Core\obj\Debug\net10.0\Calculator.Core.AssemblyInfo.cs
+C:\feb19.net\Calculator.Core\obj\Debug\net10.0\Calculator.Core.csproj.CoreCompileInputs.cache
+C:\feb19.net\Calculator.Core\obj\Debug\net10.0\Calculator.Core.dll
+C:\feb19.net\Calculator.Core\obj\Debug\net10.0\refint\Calculator.Core.dll
+C:\feb19.net\Calculator.Core\obj\Debug\net10.0\Calculator.Core.pdb
+C:\feb19.net\Calculator.Core\obj\Debug\net10.0\ref\Calculator.Core.dll

@@ -29,9 +29,9 @@ jobs:
       run: dotnet test --configuration Release --collect:"XPlat Code Coverage"
 
     - name: Publish
-      run: dotnet publish Calculator.Core/Calculator.Core.csproj \
-           --configuration Release \
-           --output publish
+      run:  dotnet publish Calculator.Core/Calculator.Core.csproj \
+         --configuration Release \
+          --output publish
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4

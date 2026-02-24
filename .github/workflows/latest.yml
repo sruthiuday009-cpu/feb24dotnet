@@ -1,4 +1,4 @@
-name: .NET CI
+name: .NET CI Pipeline
 
 on:
   push:
@@ -11,28 +11,36 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout code
+    # Checkout source code
+    - name: Checkout repository
       uses: actions/checkout@v4
 
+    # Install .NET SDK
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
 
+    # Restore dependencies
     - name: Restore
       run: dotnet restore
 
+    # Build project
     - name: Build
       run: dotnet build --configuration Release --no-restore
 
-    - name: Test with coverage
-      run: dotnet test --configuration Release --collect:"XPlat Code Coverage"
+    # Run tests with coverage
+    - name: Test
+      run: dotnet test --configuration Release --no-build --collect:"XPlat Code Coverage"
 
+    # Publish application (FIXED – no backslash issue)
     - name: Publish
-      run:  dotnet publish Calculator.Core/Calculator.Core.csproj \
-         --configuration Release \
+      run: |
+        dotnet publish Calculator.Core/Calculator.Core.csproj `
+          --configuration Release `
           --output publish
 
+    # Upload build artifact
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
